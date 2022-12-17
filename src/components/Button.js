@@ -4,7 +4,7 @@ function Button(props){
         border: "none",
         padding: "6px", // cannot do media queries like this, nor can we do hover
         fontSize: "1.2em",
-        backgroundColor: "blue",
+        backgroundColor: props.bg,
         color: "white",
         margin: "3px"
     }}>

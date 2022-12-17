@@ -18,8 +18,8 @@ function Counter (props) {
   return (
     <div className="App">
       <Display displayValue={count}/>
-      <Button label="+1" click={countUp}/>
-      <Button label="-1" click={countDown}/>
+      <Button label="+1" click={countUp} bg="green"/>
+      <Button label="-1" click={countDown} bg="red"/>
     </div>
     )
 }
