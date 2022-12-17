@@ -1,6 +1,9 @@
 import Counter from "./components/Counter"
 import InputDisplay from "./components/InputDisplay";
 import PropTricks from "./components/PropTricks";
+import data from "./data"
+import RenderArray from "./components/RenderArray";
+import Card from "./components/Card";
 
 function App() {
   const tricksprops = {
@@ -15,6 +18,7 @@ return <>
   <InputDisplay/>
   <PropTricks
   {...tricksprops}/>
+  <RenderArray data={data}/>
 </>
   
 }

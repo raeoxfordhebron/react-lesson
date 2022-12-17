@@ -1,5 +1,5 @@
-function PropTricks(props){
-    return <h1>PropTricks</h1>
+function PropTricks({bread, cheese, dessert, vegetable}){
+    return <h1>{`${bread} ${cheese} ${dessert} ${vegetable}`}</h1>
 }
 
 export default PropTricks
