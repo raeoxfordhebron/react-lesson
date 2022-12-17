@@ -1,4 +1,6 @@
 import {useState} from "react"
+import Button from "./Button"
+import Display from "./Display"
 
 function Counter (props) {
   // let count = 0
@@ -7,10 +9,16 @@ function Counter (props) {
   function countUp(){
     setCount(count + 1)
   }
+
+  function countDown(){
+    setCount(count - 1)
+  }
+
   return (
     <div className="App">
-      <h1>{count}</h1>
-      <button onClick={countUp}>Add One</button>
+      <Display displayValue={count}/>
+      <Button label="+1" click={countUp}/>
+      <Button label="-1" click={countDown}/>
     </div>
     )
 }
